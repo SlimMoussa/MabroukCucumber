@@ -1,2 +1,3 @@
 test_driver_path=c:/chromedriver.exe
+webdriver.type=webdrivermanager
 Web_portal_link=https://mabrouk.tn/

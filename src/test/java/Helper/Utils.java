@@ -13,5 +13,4 @@ public class Utils {
 		
 		return(properties.getProperty(property));
 	}
-
 }

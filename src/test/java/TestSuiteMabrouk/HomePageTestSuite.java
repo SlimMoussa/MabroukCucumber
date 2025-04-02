@@ -20,11 +20,11 @@ public class HomePageTestSuite {
 	public void je_survole_le_menu_haut_et_cliquer_sur(String x, String y) throws Exception {
 		HomePageMabrouk page = new HomePageMabrouk();
 		Config.Attente(10);
-        page.mouseHoverMenu (x);
-        Thread.sleep(4000);
-        page.ClickOnMenu(y);
+        page.mouseHoverMenu();
+        Thread.sleep(5000);
+        page.ClickOnMenu();
 	}
-
+	
 	@Then("La page est affiché {string}")
 	public void la_page_est_affiché(String expectedTitle) throws Exception {
 		Config.Attente(10);
@@ -33,6 +33,4 @@ public class HomePageTestSuite {
 		Thread.sleep(2000);
         Config.CloseBrowser();
 	}
-
-
 }

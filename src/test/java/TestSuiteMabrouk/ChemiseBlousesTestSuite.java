@@ -15,13 +15,14 @@ public class ChemiseBlousesTestSuite {
         Config.maximiseWindow();
         String url = "https://mabrouk.tn/categorie-produit/vetements-femmes/chemises-blouses/";
         Config.driver.get(url);
+        Thread.sleep(2000);
 	}
 
 	@When("Utilisateur clique sur le produit {string}")
 	public void utilisateur_clique_sur_le_produit(String nameProduct) throws Exception {
 		ChemisesBlousesPage page = new ChemisesBlousesPage();
 		Config.Attente(10); 
-		Thread.sleep(2000);
+		Thread.sleep(5000);
         page.ClickOnMenuJB(nameProduct);
 	}
 
